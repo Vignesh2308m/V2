@@ -6,5 +6,5 @@ import (
 
 func main() {
 
-	fmt.Println(read.read_file("/home/vickynila/Devops class"))
+	fmt.Println(reader.read_file("/home/vickynila/Devops class"))
 }
