@@ -4,12 +4,11 @@ import (
 	"os"
 )
 
+func read_file(path string) []byte {
 
-func read_file (path string) []byte{
+	f, err := os.ReadFile(path)
 
-	f,err:=os.ReadFile(path)
-
-	if err!=nil{
+	if err != nil {
 		panic(err)
 	}
 
