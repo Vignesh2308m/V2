@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
+	"github.com/Vignesh2308m/V2/reader"
 )
 
 func main() {
 
-	fmt.Println(reader.read_file("/home/vickynila/Devops class"))
+	fmt.Println(reader.Read_file("/home/vickynila/DevOps class"))
 }

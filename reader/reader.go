@@ -4,7 +4,7 @@ import (
 	"os"
 )
 
-func read_file(path string) []byte {
+func Read_file(path string) []byte {
 
 	f, err := os.ReadFile(path)
 
