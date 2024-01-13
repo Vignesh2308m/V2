@@ -8,7 +8,9 @@ import (
 
 func main() {
 
-	f := reader.Read_file("/home/vickynila/DevOps class")
+	f := reader.Read_file("/home/vickynila/test.txt")
 
-	fmt.Println(reader.Word_count(f))
+	fmt.Println(f)
+
+	fmt.Println(reader.Word_count(f, 0))
 }
