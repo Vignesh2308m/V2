@@ -1,9 +1,16 @@
 package reader
 
+import (
+	"encoding/csv"
+)
+
+
 type csvfile struct {
 	f_path string
-	sep    string
-	end    string
+}
+
+type csv_context struct{
+	
 }
 
 func (c *csvfile) CSV(f_path, sep, end string) *csvfile {
@@ -12,4 +19,10 @@ func (c *csvfile) CSV(f_path, sep, end string) *csvfile {
 		sep:    c.sep,
 		end:    c.end,
 	}
+}
+
+func (c *)
+
+func (c *csvfile) Row_Count() int{
+
 }
