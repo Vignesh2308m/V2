@@ -2,18 +2,19 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/Vignesh2308m/V2/reader"
+	"strings"
 )
 
 func main() {
 
-	f, err := reader.Read_file("/home/vickynila/test.txt")
-	if err != nil {
-		panic(err)
+	sample_data := map[int]string{
+		1: "Vijayanila",
+		2: "Vignesh",
 	}
-	fmt.Println(f)
 
-	// fmt.Println(reader.Word_count(f, 0))
+	data := NewDataSet(sample_data)
 
+	data.apply(strings.ToUpper)
+
+	fmt.Println(data)
 }
