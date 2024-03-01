@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type dataset struct {
 	data map[int]string
 }
@@ -29,8 +27,6 @@ func (d *dataset) filter(fn func(string) bool) *dataset {
 
 func (d *dataset) reduce(fn func(string, string) string) *dataset {
 	res := make(map[int]string)
-
-	fmt.Println(len(d.data))
 
 	for key, val := range d.data {
 		res[key] = fn(val, res[key])
