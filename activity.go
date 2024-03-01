@@ -32,10 +32,8 @@ func (d *dataset) reduce(fn func(string, string) string) *dataset {
 
 	fmt.Println(len(d.data))
 
-	for k := range d.data {
-		if k < len(d.data) {
-			res[k] = fn(d.data[k], d.data[k+1])
-		}
+	for key, val := range d.data {
+		res[key] = fn(val, res[key])
 	}
 	d.data = res
 
